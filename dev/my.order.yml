@@ -1,2 +1,3 @@
-demo: 
-  title: "default title"
+demo:
+  title: default title
+  name: my.order3
