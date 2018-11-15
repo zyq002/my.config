@@ -22,4 +22,9 @@ mybatis:
     typeAliasesPackage: com.order.model.*
     mapperLocations: classpath:mybatis/mapper/*.xml
     checkConfigLocation: true
-   
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.169.128:8080/my.demo/eureka/
+  instance: 
+      prefer-ip-address: true
