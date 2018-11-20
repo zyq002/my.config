@@ -11,10 +11,10 @@ spring:
       tomcat.test-on-borrow: true  
       hikari:
         maximum-pool-size: 10
-      data:
-        cassandra:
-          read-timeout-millis: 5000
-      jpa:  
+    data:
+      cassandra:
+        read-timeout-millis: 5000
+    jpa:  
         show-sql: true
       
 mybatis: 
