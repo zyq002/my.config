@@ -16,7 +16,6 @@ spring:
         read-timeout-millis: 5000
     jpa:  
         show-sql: true
-      
 mybatis: 
     typeHandlersPackage: com.order.dao.*
     typeAliasesPackage: com.order.model.*
