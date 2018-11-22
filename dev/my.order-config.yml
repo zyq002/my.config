@@ -26,4 +26,12 @@ mybatis:
     typeAliasesPackage: com.order.model.*
     mapperLocations: classpath:mybatis/mapper/*.xml
     checkConfigLocation: true
+feign: 
+    httpclient:
+      time-to-live: 50000
+    client:
+      config:
+        feignName:
+           read-timeout: 5000
+           connect-timeout: 5000  
  
