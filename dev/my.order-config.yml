@@ -10,7 +10,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: 'jdbc:mysql://192.168.169.128:3306/order_form?useUnicode=true&characterEncoding=utf8'  
     username: root 
-    password: 123456
+    password: 111111
     continue-on-error: true  
     tomcat.max-wait: 1000  
     tomcat.test-on-borrow: true  
