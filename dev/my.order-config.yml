@@ -21,11 +21,18 @@ spring:
       read-timeout-millis: 5000
   jpa:  
     show-sql: true
-mybatis: 
-    typeHandlersPackage: com.order.dao.*
-    typeAliasesPackage: com.order.model.*
-    mapperLocations: classpath:mybatis/mapper/*.xml
-    checkConfigLocation: true
+mybatis-plus: 
+  mapper-locations: classpath:mapper/**/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #配置显示sql
+    map-underscore-to-camel-case: false #字段是否有_设置 
+  global-config:
+    #meta-object-handler: com.MybatisObjectHandler
+    db-config:
+      id-type: auto #默认主键类型
+      logic-not-delete-value: 0 
+      logic-delete-value: 1
+      table-underline: false #表名是否有_  可以通过@TableName("")指定数据表名称
 feign: 
     httpclient:
       time-to-live: 50000
